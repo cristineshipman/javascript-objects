@@ -24,3 +24,22 @@ jordan.greet(sonny);
 console.log("Sonny's contact info; email: " + sonny.email + " , phone:" + sonny.phone);
 //write a statement to print the contact info (email and phone) of Jordan:
 console.log("Jordan's contact info; email: " + jordan.email + " , phone:" + jordan.phone);
+
+// Create a card constructor:
+
+function Card(point, suit) {
+  this.point = point;
+  this.suit = suit;
+}
+
+var myCard = new Card(5, 'diamonds')
+
+myCard.point;
+
+// add a getImageUrl
+
+Card.prototype.getImageUrl = function () {
+  return 'images/5_of_diamonds.png';
+}
+
+myCard.getImageUrl();
